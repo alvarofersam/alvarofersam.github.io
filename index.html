@@ -124,8 +124,8 @@
                     frase_boton = '';
 
                 if (x === 0) {
-                    document.querySelector('#a').innerHTML = "Quedan:";
-                    document.querySelector('#boton').innerHTML = "Actualiza";
+                    frase_a     = "Quedan:";
+                    frase_boton = "Actualiza";
                     
                 } else if (x % 2 === 0) {
                     random_a1 = Math.floor(Math.random() * (frases_a1.length));
@@ -141,12 +141,12 @@
                     random_c2 = Math.floor(Math.random() * (frases_c2.length));
                     random_boton2 = Math.floor(Math.random() * (frases_boton2.length));
 
-                    frase_a = frases_a2[random_a2];
-                    frase_c = frases_c2[random_c2];
+                    frase_a     = frases_a2[random_a2];
+                    frase_c     = frases_c2[random_c2];
                     frase_boton = frases_boton2[random_boton2];
                 }
-                document.querySelector('#a').innerHTML = frase_a;
-                document.querySelector('#d').innerHTML = frase_c;
+                document.querySelector('#a').innerHTML     = frase_a;
+                document.querySelector('#d').innerHTML     = frase_c;
                 document.querySelector('#boton').innerHTML = frase_boton;
 
                 document.querySelector('#b').innerHTML = text;
